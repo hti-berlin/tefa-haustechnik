@@ -561,3 +561,5 @@ a.inline:hover{ border-bottom-color:var(--accent); }
 .wide-media img{ width:100%; aspect-ratio:3/2; object-fit:cover; }
 @media (min-width:900px){ #zusammenhalt .feature-media{ grid-column:1 / span 7; } #zusammenhalt .feature-text{ grid-column:9 / span 4; align-self:center; } }
 .nav a[aria-current="page"]{ border-bottom-color:var(--red); }
+/* Schriftzug in der Kopfleiste: HAUSTECHNIK in Großbuchstaben wie im Logo */
+.brand-text em{ text-transform:uppercase; letter-spacing:.12em; font-size:.82em; margin-left:.2em; }
