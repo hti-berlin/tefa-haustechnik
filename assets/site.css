@@ -532,3 +532,32 @@ a.inline:hover{ border-bottom-color:var(--accent); }
 .band--video .bg-video{ position:absolute; inset:0; }
 .video-toggle{ position:absolute; left:0; bottom:0; z-index:2; min-height:var(--ctl); padding:0 var(--s2); background:var(--white); color:var(--primary); font-size:13px; font-weight:600; }
 .video-toggle:hover{ color:var(--accent); }
+
+/* ===== TEFA Haustechnik: Rot (Original-Markenfarbe #d3242b) ===== */
+:root{
+  --red:#d3242b;                   /* Markenrot: 5,2:1 auf Weiß, auch für Schrift */
+  --accent:#d3242b; --accent-dark:#a91b21;
+  --accent-tint:#f7e9e9;
+  --subtle:#f5f5f4; --blue-grey:#dcdedf; --line:#e6e7e8;
+}
+.btn--accent:hover{ background:var(--accent-dark); }
+.h1 em,.h2 em,.display em{ color:var(--accent); }
+.on-photo em,.hero em,.cap-item em{ color:inherit; }
+.hdr.solid .brand-text em,.hdr.menu-open .brand-text em{ color:var(--accent); }
+.wordmark{ border-left:3px solid var(--red); }
+.step::before{ width:40px; height:3px; top:-2px; background:var(--red); }
+.quote{ border-top-color:var(--red); }
+.footer{ border-top:4px solid var(--red); }
+.band figcaption{ border-left:3px solid var(--red); }
+
+/* ===== Teamseite ===== */
+.hero--team{ height:72vh; height:72svh; min-height:460px; max-height:820px; }
+.hero--team .hero-photo img{ object-position:50% 45%; }
+.people{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--s2); }
+@media (min-width:768px){ .people{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:var(--s3); } }
+@media (min-width:1100px){ .people{ grid-template-columns:repeat(4,minmax(0,1fr)); } }
+.people figure{ margin:0; }
+.people img{ display:block; width:100%; aspect-ratio:4/5; object-fit:cover; background:var(--grey); }
+.wide-media img{ width:100%; aspect-ratio:3/2; object-fit:cover; }
+@media (min-width:900px){ #zusammenhalt .feature-media{ grid-column:1 / span 7; } #zusammenhalt .feature-text{ grid-column:9 / span 4; align-self:center; } }
+.nav a[aria-current="page"]{ border-bottom-color:var(--red); }
